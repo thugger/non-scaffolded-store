@@ -1,0 +1,33 @@
+model: SuperHero
+table: super_heroes
+
+id: auto inc int
+hero_name: string/varchar
+real_name: string/varchar
+created_at: timestamp
+updated_at: timestamp
+
+rails new <name>
+cd <dirname>
+git init .
+git status
+git add .
+git commit -m "First Commit"
+git remote add origin <url from repository>
+git push -u origin master 
+
+* config/initializers/inflections.rb will help fix pluralizations/etc
+
+git push #to update
+rails g scaffold SuperHero real_name:string hero_name:string
+add/commit -m/push
+rake db:migrate # update models/etc
+rails s # starts rails server
+* sets up webrick on localhost:3000
+* app/models contains ruby models
+* app/views may need to comment out javascript unless jre is setup
+* app/controllers contains rb files that dictate behaviour
+
+* <%= is a puts
+
+rails c #opens console where ruby code is run realtime
