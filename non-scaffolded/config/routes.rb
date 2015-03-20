@@ -1,4 +1,23 @@
 Rails.application.routes.draw do
+  #http verbs
+#get, post, patch, delete
+
+  root to: 'products#index'
+
+  #resources :products would build 7 routes for RESTful products
+  #Create routes
+  get   'products/new',     to: 'products#new', as: 'new_product'      #show new product form
+  post  'products',  to: 'products#create'   #create the new product
+
+  #read routes
+  #get 'products/index' in this case the url has to match the file path
+  get   'products',         to: 'products#index'    #show all products
+  get   'products/:id',     to: 'products#show',     as: 'product', id: /\d+/ #show a specific product
+
+  get 'products/:id/edit',   to: 'products#edit', as: 'edit_product', id: /\d+/
+  patch 'products/:id',      to: 'products#update', id: /\d+/
+
+  delete 'products/:id' => 'products#destroy', id: /\d+/, as: 'destroy_product'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

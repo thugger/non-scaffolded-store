@@ -1,0 +1,28 @@
+model: product (db table: products) (camel case)
+app/models/product.rb
+
+	-name: string
+	-description: text
+	-price: decimal
+
+controller: app/controller/products_controller.rb (snake case)
+
+views: app/views/products/*.html.erb
+
+routes: config/routes/rb
+
+
+rails g model <model name> <attribute>:<datatype> <attribute>:<datatype> <attribute>:<datatype>
+
+rake db:migrate
+
+edit model as desired for validations, create some items using rails c to get ruby console and Product.create/etc
+reload! updates console running state of objects if files have been changed 
+
+to run two rails servers
+rails s -p 3001 
+rails s -p <port number>
+
+
+
+
