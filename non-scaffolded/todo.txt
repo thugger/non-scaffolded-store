@@ -3,3 +3,7 @@ talk to yanning about tuition
 talk to dr blouwe about t2201
 
 notice of assessment
+
+look up http ver 2
+
+imagemagick for resizing images, get binary release
