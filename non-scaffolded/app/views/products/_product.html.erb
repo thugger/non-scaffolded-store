@@ -1,0 +1,14 @@
+<div class ="product">
+<h1><%= link_to product.name, product %></h1>
+
+<% if product.image_filename.present? %>
+<p><%= image_tag product.image_filename %></p>
+<% end %>
+
+<div><%= product.description %></div>
+
+<p><strong>Price: </strong><%= number_to_currency product.price %></p>
+
+<%= link_to 'Edit product', edit_product_path(product) %>
+<%= link_to 'Destroy product', product, method: :delete, data: {confirm: 'Are you sure?'} %>
+</div>

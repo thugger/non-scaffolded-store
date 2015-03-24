@@ -4,7 +4,11 @@ Rails.application.routes.draw do
 
   root to: 'products#index'
 
-  #resources :products would build 7 routes for RESTful products
+  #resources :products would build 7 routes for RESTful products, show below for create/read/update/edit/destroy
+  # only[:symbol, :symbol, etc] limits the routes that are made
+  # constraints: {symbol: /regex/} allows for generic contstraints
+
+  #roy fielding, look up his thesis for restful, also "how I explained rest to my wife"
   #Create routes
   get   'products/new',     to: 'products#new', as: 'new_product'      #show new product form
   post  'products',  to: 'products#create'   #create the new product
@@ -18,6 +22,12 @@ Rails.application.routes.draw do
   patch 'products/:id',      to: 'products#update', id: /\d+/
 
   delete 'products/:id' => 'products#destroy', id: /\d+/, as: 'destroy_product'
+  
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

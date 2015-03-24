@@ -26,3 +26,4 @@ rails s -p <port number>
 
 
 
+rails g migration add_column_name_to_tablename columnname:datatype
