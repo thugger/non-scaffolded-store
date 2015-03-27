@@ -1,0 +1,15 @@
+$my_shade_of_grey: #bbb;
+$default_padding: 1em;
+
+#container {
+	border: 1px solid $my_shade_of_grey;
+	width: 850px;
+	margin: 0 auto;
+	padding: $default_padding;
+
+	header {
+	background-color: $my_shade_of_grey;
+	padding: $default_padding;
+	}
+}
+
