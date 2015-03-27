@@ -27,3 +27,12 @@ rails s -p <port number>
 
 
 rails g migration add_column_name_to_tablename columnname:datatype
+rake db:migrate
+
+
+
+add activeadmin to gemfile, add devise if necessary
+rails g active_admin:install
+rake db:migrate
+restart rails server
+rails g active_admin:Product

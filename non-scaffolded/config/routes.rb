@@ -12,18 +12,18 @@ Rails.application.routes.draw do
 
   #roy fielding, look up his thesis for restful, also "how I explained rest to my wife"
   #Create routes
-  get   'products/new',     to: 'products#new', as: 'new_product'      #show new product form
-  post  'products',  to: 'products#create'   #create the new product
+  #get   'products/new',     to: 'products#new', as: 'new_product'      #show new product form
+  #post  'products',  to: 'products#create'   #create the new product
 
   #read routes
   #get 'products/index' in this case the url has to match the file path
   get   'products',         to: 'products#index'    #show all products
   get   'products/:id',     to: 'products#show',     as: 'product', id: /\d+/ #show a specific product
 
-  get 'products/:id/edit',   to: 'products#edit', as: 'edit_product', id: /\d+/
-  patch 'products/:id',      to: 'products#update', id: /\d+/
+  #get 'products/:id/edit',   to: 'products#edit', as: 'edit_product', id: /\d+/
+  #patch 'products/:id',      to: 'products#update', id: /\d+/
 
-  delete 'products/:id' => 'products#destroy', id: /\d+/, as: 'destroy_product'
+  #delete 'products/:id' => 'products#destroy', id: /\d+/, as: 'destroy_product'
   
 
 

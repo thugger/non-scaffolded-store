@@ -1,0 +1,15 @@
+
+
+p-608 - Do I fill in the top 3 boxes? (name/tel/add of employer, requirer of security clearance check, nature & location of work)
+
+sec clear l 2 doc - pt 3 immediate supervisor, do you want past employer or coop coordinator?
+
+
+adev 2002
+
+
+1 establish connection
+2 create data adapters - application side data crud procedures
+3 create datasets
+4 create databound controls - controls/visual objects which use data
+5 write code to manipulate data - work with controls/etc in the client/data tier
