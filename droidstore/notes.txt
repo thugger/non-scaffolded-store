@@ -1,0 +1,12 @@
+added:
+activeadmin
+devise
+rubocop
+minimagick
+carrierwave
+
+repository:
+thugger/droidstore
+
+to run rubocop
+rubocop -R -c rubocop.yml

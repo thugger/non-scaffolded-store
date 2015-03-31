@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Droid name:</strong>
+  <%= @droid.droid_name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @droid.price %>
+</p>
+
+<%= link_to 'Edit', edit_droid_path(@droid) %> |
+<%= link_to 'Back', droids_path %>
