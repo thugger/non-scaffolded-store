@@ -10,3 +10,5 @@ thugger/droidstore
 
 to run rubocop
 rubocop -R -c rubocop.yml
+
+||= is memo-ise , gives a value if nil

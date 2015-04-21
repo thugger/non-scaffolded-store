@@ -4,7 +4,8 @@ ActiveAdmin.register Droid do
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :droid_name, :description, :price, :image, :series, :droidclass
+  permit_params :droid_name, :description, :price, :image, :series, :droid_class_id
+
   #
   # or
   #

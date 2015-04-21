@@ -7,6 +7,6 @@ class DroidsController < InheritedResources::Base
         :price,
         :series,
         :image,
-        :droidclass)
+        :droid_class)
     end
 end
